@@ -3,7 +3,7 @@
         "mongodb": "^2.2.25"
     },
     "name": "mglastone",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "simple lib to get last mongodb id",
     "main": "mglastone.js",
     "devDependencies": {},

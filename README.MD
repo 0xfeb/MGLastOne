@@ -15,6 +15,13 @@ mg.MGLastOneAsync('aaa')
         console.log(error)
     })
 ```
+### API
+* MGConfig -- 配置mongodb服务<br/>
+* MGLastOne -- 递增获取ID值<br/>
+* MGLastOneAsync -- 递增获取ID值, promise模式<br/>
+* MGSetValue -- 手动设置ID值, 用在批量配置id值之后<br/>
+* MGSetValueAsync -- 手动设置ID值, promise模式<br/>
+
 ## 安装
 ```
 npm install mglastone

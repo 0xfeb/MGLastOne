@@ -16,3 +16,5 @@ mg.MGLastOneAsync('test2')
     .catch(function(error) {
         console.log(error)
     })
+
+//mg.MGSetValueAsync('test2', 100)
