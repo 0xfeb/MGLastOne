@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "mongodb": "^2.2.25"
+  },
+  "name": "mglastone",
+  "version": "0.0.1",
+  "description": "simple lib to get last mongodb id",
+  "main": "mglastone.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WangYuanOu",
+  "license": "MIT"
+}
