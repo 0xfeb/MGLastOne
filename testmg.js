@@ -1,13 +1,14 @@
 var mg = require('./mglastone')
 
-mg.MGLastOneAsync('test')
+mg.MGConfig('mongodb://localhost:1700/MGLastOne')
+mg.MGLastOneAsync('test2')
     .then(function(m) {
         console.log(m)
-        return mg.MGLastOneAsync('test')
+        return mg.MGLastOneAsync('test2')
     })
     .then(function(m) {
         console.log(m)
-        return mg.MGLastOneAsync('test')
+        return mg.MGLastOneAsync('test2')
     })
     .then(function(m) {
         console.log(m)

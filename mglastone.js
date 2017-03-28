@@ -17,7 +17,7 @@ function mg_get_last_one(name, resp) {
                 return
             }
 
-            col.findOne({}, function(err, doc) {
+            col.findOne({ 'name': name }, function(err, doc) {
                 if (doc == null) {
                     console.log('can not read value')
                     col.insertOne({ 'name': name, 'num': 0 })
@@ -27,13 +27,17 @@ function mg_get_last_one(name, resp) {
                 }
 
                 let lastId = doc.num + 1
-                col.updateOne({ 'name': name }, { 'num': lastId }, function(err) {
+                col.updateOne({ 'name': name }, { 'name': name, 'num': lastId }, function(err) {
                     db.close()
                     resp(null, lastId)
                 })
             })
         })
     })
+}
+
+exports.MGConfig = function(mongo_url) {
+    url = mongo_url
 }
 
 exports.MGLastOneAsync = function(name) {
